@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "GooPT",
+  "version": "1.0",
+  "description": "Reskin ChatGPT to look like Google.",
+  "content_scripts": [
+    {
+      "matches": ["*://www.chat.openai.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
